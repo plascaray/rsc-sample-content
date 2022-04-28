@@ -1,1 +1,15 @@
-**/rsconnect-python/
+# RStudio Connect deployment state
+rsconnect-python/
+rsconnect/
+
+# R stuff
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+renv/
+
+# Python stuff
+.venv/
+*.pyc
