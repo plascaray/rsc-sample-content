@@ -15,3 +15,9 @@ An API allows you to turn your models into production services that other tools 
 * R version 3.2 or higher
 
 <!-- NOTE: this file is generated -->
+
+## Creating the manifest.json
+
+```r
+rsconnect::writeManifest(appFiles = list('plumber.R', 'stock_data.rds'))
+```
