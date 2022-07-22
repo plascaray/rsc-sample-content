@@ -50,6 +50,13 @@ class Stderr(Resource):
         sys.stderr.flush()
         return 200
 
+@ns.route("/environment")
+class Stdout(Resource):
+    """Returns the content env as a dict"""
+
+    def get(self):
+        return dict(os.environ)
+
 @ns.route("/file")
 @api.doc(params={'msg': 'A log message'})
 class File(Resource):
