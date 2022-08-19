@@ -5,6 +5,11 @@
     "appmode": "python-api",
     "entrypoint": "app"
   },
+  "environment": {
+    "image": "dbkegley/rsc-sample-content:python-logs-api-suppress-build",
+    "suppress_build": true,
+    "suppress_env_cache_dir_mount": true
+  }, 
   "python": {
     "version": "3.10.6",
     "package_manager": {
