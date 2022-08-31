@@ -8,6 +8,11 @@
             "package_file": "requirements.txt"
         }
     },
+    "environment": {
+        "image": "dbkegley/rsc-sample-content:custom-image",
+        "no_build": true,
+        "no_env_cache_dir_mount": true
+      },
     "version": 1,
     "files": {
         "add.ipynb": {

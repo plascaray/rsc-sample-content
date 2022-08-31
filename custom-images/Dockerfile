@@ -135,12 +135,14 @@ RUN /opt/python/${PYTHON_VERSION}/bin/pip install \
 
 # Install Content Dependencies ------------------------------------------------#
 
-### PYTHON
-# COPY requirements.txt /tmp/requirements.txt
-# RUN /opt/python/${PYTHON_VERSION}/bin/pip install -r /tmp/requirements.txt
-
 ### R
 ENV R_LIBS_SITE=/opt/rpkgs
 RUN mkdir -p ${R_LIBS_SITE} && chmod 755 ${R_LIBS_SITE}
 COPY bootstrap.R /tmp/
-RUN /opt/R/${R_VERSION}/bin/Rscript --no-save /tmp/bootstrap.R
+RUN /opt/R/${R_VERSION}/bin/Rscript --no-save /tmp/bootstrap.R \
+    && rm /tmp/bootstrap.R
+
+### PYTHON
+COPY requirements.txt /tmp/requirements.txt
+RUN /opt/python/${PYTHON_VERSION}/bin/pip install -r /tmp/requirements.txt \
+    && rm /tmp/requirements.txt
