@@ -10,7 +10,8 @@
     "has_parameters": false
   },
   "quarto": {
-    "version": "1.0.37"
+    "version": "1.0.37",
+    "engines": ["knitr"]
   },
   "environment": {
     "image": "dbkegley/rsc-sample-content:custom-image",
