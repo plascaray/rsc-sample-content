@@ -9,6 +9,14 @@
     "content_category": null,
     "has_parameters": false
   },
+  "python": {
+    "version": "3.10.6",
+    "package_manager": {
+      "name": "pip",
+      "version": "22.2.2",
+      "package_file": "requirements.txt"
+    }
+  },
   "environment": {
     "image": "dbkegley/rsc-sample-content:custom-image",
     "prebuilt": true
@@ -1000,7 +1008,7 @@
   },
   "files": {
     "requirements.txt": {
-      "checksum": "c39178f2a4b8b6251464689b5ee876ec"
+      "checksum": "37ca924509853f5b55408f2a4bcd643e"
     },
     "server.py": {
       "checksum": "57b9ae374bd091799451b9fdfc5b6fb2"
