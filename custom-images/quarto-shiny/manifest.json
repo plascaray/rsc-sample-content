@@ -12,6 +12,10 @@
   "quarto": {
     "version": "1.0.37"
   },
+  "environment": {
+    "image": "dbkegley/rsc-sample-content:custom-image",
+    "prebuilt": true
+  },
   "files": {
     "_quarto.yml": {
       "checksum": "d0671a7116216a2d3a037a0dd6e900b1"

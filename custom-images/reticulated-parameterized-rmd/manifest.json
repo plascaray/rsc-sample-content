@@ -9,6 +9,10 @@
     "content_category": null,
     "has_parameters": true
   },
+  "environment": {
+    "image": "dbkegley/rsc-sample-content:custom-image",
+    "prebuilt": true
+  },
   "files": {
     "index.Rmd": {
       "checksum": "81732eaeda57c3a49a35bb81abd15762"

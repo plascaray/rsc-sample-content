@@ -11,8 +11,7 @@
   },
   "environment": {
     "image": "dbkegley/rsc-sample-content:custom-image",
-    "no_build": true,
-    "no_env_cache_dir_mount": true
+    "prebuilt": true
   },
   "packages": {
     "base64enc": {
