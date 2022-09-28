@@ -9,6 +9,9 @@
     "content_category": null,
     "has_parameters": false
   },
+  "quarto": {
+    "version": "1.0.37"
+  },
   "files": {
     "reqticulated.qmd": {
       "checksum": "99c3530fe3a4df192623ea774559665f"

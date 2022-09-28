@@ -112,8 +112,13 @@ RUN curl -fsSL -O https://cdn.rstudio.com/r/${R_DISTRIBUTION}/pkgs/${R_INSTALLER
     rm ${R_INSTALLER} && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Content Dependencies ------------------------------------------------#
+# Install Quarto --------------------------------------------------------------#
+ARG QUARTO_VERSION=1.0.37
+RUN curl -L -o /quarto.deb https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb && \
+  apt install /quarto.deb && \
+  rm -f /quarto.deb
 
+# Install Content Dependencies ------------------------------------------------#
 ### R
 ENV R_LIBS_SITE=/opt/rpkgs
 RUN mkdir -p ${R_LIBS_SITE} && chmod 755 ${R_LIBS_SITE}

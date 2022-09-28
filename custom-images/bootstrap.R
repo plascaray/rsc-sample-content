@@ -4,4 +4,4 @@ local({r <- getOption("repos")
        options(repos=r)
 })
 
-install.packages(c("renv", "rmarkdown", "shiny", "dplyr", "plumber"))
+install.packages(c("renv", "rmarkdown", "shiny", "dplyr", "plumber", "odbc"))

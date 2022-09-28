@@ -9,6 +9,9 @@
     "content_category": null,
     "has_parameters": false
   },
+  "quarto": {
+    "version": "1.0.37"
+  },
   "files": {
     "_quarto.yml": {
       "checksum": "d0671a7116216a2d3a037a0dd6e900b1"

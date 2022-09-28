@@ -5,3 +5,7 @@ build:
 push:
   #!/usr/bin/env bash
   docker push dbkegley/rsc-sample-content:custom-image
+
+bash:
+  #!/usr/bin/env bash
+  docker run --rm -it dbkegley/rsc-sample-content:custom-image /bin/bash

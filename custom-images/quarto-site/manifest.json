@@ -9,7 +9,7 @@
         "has_parameters": false
     },
     "quarto": {
-        "version": "0.3.114",
+        "version": "1.0.37",
         "engines": [
             "markdown"
         ]
