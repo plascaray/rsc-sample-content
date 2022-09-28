@@ -1,7 +1,7 @@
 library(shiny)
 library(reticulate)
 
-print(Sys.getenv())
+#print(Sys.getenv())
 
 source_python('server.py')
 
