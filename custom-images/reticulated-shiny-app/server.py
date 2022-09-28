@@ -4,4 +4,4 @@ mean = 100
 sd = 10
 n = 100
 
-data = np.random.normal(mean, sd, n)
+data = np.random.normal(mean, sd, n).tolist()
