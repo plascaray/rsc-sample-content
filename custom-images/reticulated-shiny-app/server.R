@@ -1,6 +1,8 @@
 library(shiny)
 library(reticulate)
 
+print(Sys.getenv())
+
 source_python('server.py')
 
 # Define server logic required to draw a histogram
