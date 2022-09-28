@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.1.2",
+  "metadata": {
+    "appmode": "quarto-shiny",
+    "primary_rmd": "shiny.qmd",
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "files": {
+    "_quarto.yml": {
+      "checksum": "d0671a7116216a2d3a037a0dd6e900b1"
+    },
+    "shiny_files/libs/bootstrap/bootstrap-icons.css": {
+      "checksum": "3104c106b6c22560ae274d7c56f116c5"
+    },
+    "shiny_files/libs/bootstrap/bootstrap-icons.woff": {
+      "checksum": "e4cc83ddcec34db65724eb56c5230b4c"
+    },
+    "shiny_files/libs/bootstrap/bootstrap.min.css": {
+      "checksum": "fc29adc7492ef5fc140343125eda9fa1"
+    },
+    "shiny_files/libs/bootstrap/bootstrap.min.js": {
+      "checksum": "7ccd9d390d31af98110f74f842ea9b32"
+    },
+    "shiny_files/libs/clipboard/clipboard.min.js": {
+      "checksum": "ad98572d415d2f2452845a6068a913c0"
+    },
+    "shiny_files/libs/quarto-html/anchor.min.js": {
+      "checksum": "a58f4bdbf86e8ae057af9131b5b1bcfd"
+    },
+    "shiny_files/libs/quarto-html/popper.min.js": {
+      "checksum": "ad6c106f3ba17d5a54d8053a4c4899ca"
+    },
+    "shiny_files/libs/quarto-html/quarto-syntax-highlighting.css": {
+      "checksum": "099cd394577c915952e100d918f76f84"
+    },
+    "shiny_files/libs/quarto-html/quarto.js": {
+      "checksum": "1436b87e2afce9e391544d1991af7c42"
+    },
+    "shiny_files/libs/quarto-html/tippy.css": {
+      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
+    },
+    "shiny_files/libs/quarto-html/tippy.umd.min.js": {
+      "checksum": "d828775275749701b48bd9d958814111"
+    },
+    "shiny.html": {
+      "checksum": "0535404a7b8f4374874cfb0257ca5fd6"
+    },
+    "shiny.qmd": {
+      "checksum": "513aea629c736788c141d1a05d4ce839"
+    }
+  },
+  "users": null
+}

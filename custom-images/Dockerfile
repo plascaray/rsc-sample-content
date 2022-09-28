@@ -112,27 +112,6 @@ RUN curl -fsSL -O https://cdn.rstudio.com/r/${R_DISTRIBUTION}/pkgs/${R_INSTALLER
     rm ${R_INSTALLER} && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Connect Dependencies ------------------------------------------------#
-
-# TODO: These libraries are required by Connect but when should they be installed and who
-# should be responsible for installing them? Should our runtime dependencies come with
-# and requirements.txt file?
-# https://github.com/rstudio/connect/blob/28b8a9980ff6635cc807bf8c0d2023a0cb2c5dfb/python/build_environment.py#L280-L288
-RUN /opt/python/${PYTHON_VERSION}/bin/pip install \
-    setuptools \
-    bjoern==3.1.0 \
-    waitress==1.4.3 \
-    jupyter \
-    nbclient \
-    nbconvert \
-    nbformat \
-    ipykernel \
-    aiofiles \
-    starlette \
-    uvicorn \
-    websockets \
-    fastapi
-
 # Install Content Dependencies ------------------------------------------------#
 
 ### R

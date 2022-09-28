@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.1.2",
+  "metadata": {
+    "appmode": "quarto-static",
+    "primary_rmd": "reqticulated.qmd",
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "files": {
+    "reqticulated.qmd": {
+      "checksum": "99c3530fe3a4df192623ea774559665f"
+    }
+  },
+  "users": null
+}

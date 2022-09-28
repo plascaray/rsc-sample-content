@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.1.2",
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "c39178f2a4b8b6251464689b5ee876ec"
+    },
+    "server.py": {
+      "checksum": "c0b47c20ce87023d0bdaeaf151bcf86c"
+    },
+    "server.R": {
+      "checksum": "56e614c881a27e078b9f893279cd6391"
+    },
+    "ui.R": {
+      "checksum": "bef815f14c41e22765178135ad3bb6fd"
+    }
+  },
+  "users": null
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.1.2",
+  "metadata": {
+    "appmode": "rmd-static",
+    "primary_rmd": "index.Rmd",
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": true
+  },
+  "files": {
+    "index.Rmd": {
+      "checksum": "81732eaeda57c3a49a35bb81abd15762"
+    },
+    "README.md": {
+      "checksum": "0d854c060571054e69ae7f1e8c8b749b"
+    },
+    "requirements.txt": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "users": null
+}
