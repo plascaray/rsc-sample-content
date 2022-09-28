@@ -9,6 +9,14 @@
     "content_category": null,
     "has_parameters": true
   },
+  "python": {
+    "version": "3.10.6",
+    "package_manager": {
+      "name": "pip",
+      "version": "22.2.2",
+      "package_file": "requirements.txt"
+    }
+  },
   "environment": {
     "image": "dbkegley/rsc-sample-content:custom-image",
     "prebuilt": true
