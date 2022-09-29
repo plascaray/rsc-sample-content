@@ -1,7 +1,7 @@
 library(shiny)
 library(reticulate)
 
-#print(Sys.getenv())
+print(Sys.which("python"))
 
 source_python('server.py')
 
