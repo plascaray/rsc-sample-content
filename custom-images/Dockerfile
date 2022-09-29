@@ -25,6 +25,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         apt-get install -y \
         default-jdk \
         gdal-bin \
+        gdebi-core \
         git \
         gsfonts \
         imagemagick \
@@ -81,20 +82,13 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Python --------------------------------------------------------------#
-ARG MINICONDA_VERSION=4.7.12.1
-ARG PYTHON_VERSION=3.10
+ARG PYTHON_VERSION=3.10.7
 
-# The documented approach uses a particular miniconda install script version
-# to obtain the desired Python version. We are first installing miniconda and
-# then asking it to install different Python versions.
-
-RUN curl -fsSL -o miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh \
-    && chmod 755 miniconda.sh \
-    && ./miniconda.sh -b -p /opt/miniconda \
-    && /opt/miniconda/bin/conda create --quiet --yes --prefix /opt/python/${PYTHON_VERSION} python=${PYTHON_VERSION} virtualenv \
-    && rm -f miniconda.sh \
-    # remove miniconda too, for size
-    && rm -rf /opt/miniconda
+# https://deploy-preview-943--rstudio-docs.netlify.app/resources/install-python/#download-and-install-python
+RUN curl -O https://cdn.rstudio.com/python/ubuntu-1804/pkgs/python-${PYTHON_VERSION}_1_amd64.deb && \
+    gdebi --non-interactive python-${PYTHON_VERSION}_1_amd64.deb && \
+    /opt/python/${PYTHON_VERSION}/bin/pip install --upgrade pip setuptools wheel && \
+    rm python-${PYTHON_VERSION}_1_amd64.deb
 
 # Install R -------------------------------------------------------------------#
 # Reference: https://docs.rstudio.com/resources/install-r/
@@ -123,10 +117,10 @@ RUN curl -L -o /quarto.deb https://github.com/quarto-dev/quarto-cli/releases/dow
 ENV R_LIBS_SITE=/opt/rpkgs
 RUN mkdir -p ${R_LIBS_SITE} && chmod 755 ${R_LIBS_SITE}
 COPY bootstrap.R /tmp/
-RUN /opt/R/${R_VERSION}/bin/Rscript --no-save /tmp/bootstrap.R \
-    && rm /tmp/bootstrap.R
+RUN /opt/R/${R_VERSION}/bin/Rscript --no-save /tmp/bootstrap.R && \
+    rm /tmp/bootstrap.R
 
 ### PYTHON
 COPY requirements.txt /tmp/requirements.txt
-RUN /opt/python/${PYTHON_VERSION}/bin/pip install -r /tmp/requirements.txt \
-    && rm /tmp/requirements.txt
+RUN /opt/python/${PYTHON_VERSION}/bin/pip install -r /tmp/requirements.txt && \
+    rm /tmp/requirements.txt

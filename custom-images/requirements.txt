@@ -2,7 +2,7 @@
 # should be responsible for installing them? Should our runtime dependencies come with
 # and requirements.txt file?
 # https://github.com/rstudio/connect/blob/28b8a9980ff6635cc807bf8c0d2023a0cb2c5dfb/python/build_environment.py#L280-L288
-# Connect Dependencies (may not be required by the content itself)#
+# Connect Dependencies (may not be required by the content itself) #
 setuptools
 bjoern==3.1.0
 waitress==1.4.3
@@ -22,4 +22,4 @@ flask
 flask-restx
 MarkupSafe==2.0.1 # https://github.com/pallets/jinja/issues/1587
 werkzeug <= 0.16.1
-numpy
+numpy==1.22.4 --no-binary numpy
