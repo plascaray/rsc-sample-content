@@ -1,7 +1,4 @@
-import numpy as np
+import random
 
-mean = 100
-sd = 10
-n = 100
-
-data = np.random.normal(mean, sd, n).tolist()
+# Generate 100 random numbers between 1 and 100
+data = random.sample(range(1, 100), 100)
