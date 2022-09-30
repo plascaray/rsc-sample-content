@@ -13,6 +13,10 @@
       "package_file": "requirements.txt"
     }
   },
+  "environment": {
+    "image": "dbkegley/rsc-sample-content:custom-image",
+    "prebuilt": true
+  },
   "files": {
     "requirements.txt": {
       "checksum": "d41d8cd98f00b204e9800998ecf8427e"
