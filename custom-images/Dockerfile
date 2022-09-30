@@ -82,7 +82,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Python --------------------------------------------------------------#
-ARG PYTHON_VERSION=3.10.7
+ARG PYTHON_VERSION=3.8.12
 
 # https://deploy-preview-943--rstudio-docs.netlify.app/resources/install-python/#download-and-install-python
 RUN curl -O https://cdn.rstudio.com/python/ubuntu-1804/pkgs/python-${PYTHON_VERSION}_1_amd64.deb && \
