@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+
+## To start app locally:
+#   uvicorn app:app --reload
+
 import os
 import sys
 from datetime import datetime

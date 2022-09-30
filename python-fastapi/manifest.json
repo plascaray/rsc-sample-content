@@ -5,10 +5,6 @@
     "appmode": "python-fastapi",
     "entrypoint": "app"
   },
-  "environment": {
-    "image": "dbkegley/rsc-sample-content:custom-image",
-    "prebuilt": true
-  },
   "python": {
     "version": "3.8.12",
     "package_manager": {
