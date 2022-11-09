@@ -793,42 +793,6 @@
     }
   },
   "files": {
-    "reqticulated_files/libs/bootstrap/bootstrap-icons.css": {
-      "checksum": "3104c106b6c22560ae274d7c56f116c5"
-    },
-    "reqticulated_files/libs/bootstrap/bootstrap-icons.woff": {
-      "checksum": "e4cc83ddcec34db65724eb56c5230b4c"
-    },
-    "reqticulated_files/libs/bootstrap/bootstrap.min.css": {
-      "checksum": "fc29adc7492ef5fc140343125eda9fa1"
-    },
-    "reqticulated_files/libs/bootstrap/bootstrap.min.js": {
-      "checksum": "7ccd9d390d31af98110f74f842ea9b32"
-    },
-    "reqticulated_files/libs/clipboard/clipboard.min.js": {
-      "checksum": "ad98572d415d2f2452845a6068a913c0"
-    },
-    "reqticulated_files/libs/quarto-html/anchor.min.js": {
-      "checksum": "a58f4bdbf86e8ae057af9131b5b1bcfd"
-    },
-    "reqticulated_files/libs/quarto-html/popper.min.js": {
-      "checksum": "ad6c106f3ba17d5a54d8053a4c4899ca"
-    },
-    "reqticulated_files/libs/quarto-html/quarto-syntax-highlighting.css": {
-      "checksum": "099cd394577c915952e100d918f76f84"
-    },
-    "reqticulated_files/libs/quarto-html/quarto.js": {
-      "checksum": "1436b87e2afce9e391544d1991af7c42"
-    },
-    "reqticulated_files/libs/quarto-html/tippy.css": {
-      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
-    },
-    "reqticulated_files/libs/quarto-html/tippy.umd.min.js": {
-      "checksum": "d828775275749701b48bd9d958814111"
-    },
-    "reqticulated.html": {
-      "checksum": "ac748847818efce04279587cde3f31a4"
-    },
     "reqticulated.qmd": {
       "checksum": "99c3530fe3a4df192623ea774559665f"
     },
