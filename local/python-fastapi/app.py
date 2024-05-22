@@ -7,7 +7,7 @@ import os
 import sys
 from datetime import datetime
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from pydantic import BaseModel
 
 
@@ -43,6 +43,11 @@ async def log_file(message: Message):
     return 200
 
 
-@app.get("/environment")
-async def environment():
+@app.get("/environment/vars")
+async def env_vars():
     return dict(os.environ)
+
+
+@app.get("/environment/headers")
+async def env_headers(request: Request):
+    return dict(request.headers)
