@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # mypy: ignore-errors
+# run: shiny run app.py
 import os
 import json
 

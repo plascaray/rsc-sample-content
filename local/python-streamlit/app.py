@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # mypy: ignore-errors
+# run: streamlit run app.py
 import os
 
 import streamlit as st

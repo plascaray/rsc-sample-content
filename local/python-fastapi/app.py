@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-
-## To start app locally:
-#   uvicorn app:app --reload
+# run: uvicorn app:app --reload
 
 import os
 import sys
