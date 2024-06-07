@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 # mypy: ignore-errors
 import os
+import json 
 
+import jwt
 from posit.connect.client import Client
 from shiny import App, Inputs, Outputs, Session, render, ui
 
-SQL_HTTP_PATH = os.getenv("DATABRICKS_PATH")
-
-app_ui = ui.page_fluid(ui.output_text_verbatim("text"))
+app_ui = ui.page_fluid(
+        ui.row(ui.output_text_verbatim("text"),
+               style='background-color: #f6f6f6; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; height: 25em; width: 60%'))
 
 def server(input: Inputs, output: Outputs, session: Session):
     """
@@ -23,7 +25,8 @@ def server(input: Inputs, output: Outputs, session: Session):
     def text():
         with Client() as client:
             credentials = client.oauth.get_credentials(session_token)
-            return credentials.get("access_token")
+            token = jwt.decode(jwt=credentials.get("access_token"), options={"verify_signature": False})
+            return json.dumps(token, indent=4) 
 
 
 app = App(app_ui, server)

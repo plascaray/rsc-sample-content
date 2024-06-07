@@ -2,3 +2,4 @@ databricks-sql-connector==3.0.1
 databricks-sdk==0.20.0
 shiny==0.7.1
 posit-sdk==0.2.0
+PyJWT==2.8.0
