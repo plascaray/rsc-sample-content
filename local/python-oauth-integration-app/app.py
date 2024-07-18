@@ -24,8 +24,8 @@ def server(input: Inputs, output: Outputs, session: Session):
     @render.text
     def text():
         with Client() as client:
-            print(credentials.__dict__)
             credentials = client.oauth.get_credentials(session_token)
+            print(credentials.__dict__)
             token = jwt.decode(jwt=credentials.get("access_token"), options={"verify_signature": False})
             return json.dumps(token, indent=4) 
 
