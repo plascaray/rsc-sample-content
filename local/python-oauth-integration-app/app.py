@@ -27,8 +27,8 @@ def server(input: Inputs, output: Outputs, session: Session):
             print(f"session_token: {session_token}")    
             credentials = client.oauth.get_credentials(session_token)
             print(f"credentials: {credentials}")
-            token = jwt.decode(jwt=credentials.get("access_token"), options={"verify_signature": False})
-            return json.dumps(token, indent=4) 
+            # token = jwt.decode(jwt=credentials.get("access_token"), options={"verify_signature": False})
+            return credentials.get("access_token")
 
 
 app = App(app_ui, server)
