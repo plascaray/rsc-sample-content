@@ -20,11 +20,13 @@ def server(input: Inputs, output: Outputs, session: Session):
     session_token = session.http_conn.headers.get(
         "Posit-Connect-User-Session-Token"
     )
-
+    connect_server = os.environ.get("CONNECT_SERVER")
+        
     @render.text
     def text():
         with Client() as client:
-            print(f"session_token: {session_token}")    
+            print(f"session_token: {session_token}")
+            print(f"connect_server: {connect_server}")
             credentials = client.oauth.get_credentials(session_token)
             print(f"credentials: {credentials}")
             # token = jwt.decode(jwt=credentials.get("access_token"), options={"verify_signature": False})
